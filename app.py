@@ -4,6 +4,7 @@ import csv
 from os import environ
 from google.cloud import translate
 
+pinyinKanaMap = {}
 # 翻訳
 def translate_text(text: str, target_language_code: str) -> translate.Translation:
     if text: 
